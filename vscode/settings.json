@@ -1,0 +1,23 @@
+{
+    "__comment": "Windows %APPDATA%\Code\User\settings.json; macOS $HOME/Library/Application Support/Code/User/settings.json; Linux $HOME/.config/Code/User/settings.json"
+},
+{
+    "vscode-neovim.neovimExecutablePaths.darwin": "/Users/work/nvim-osx64/bin/nvim",
+    "window.autoDetectColorScheme": true,
+    "breadcrumbs.enabled": false,
+    "editor.minimap.enabled": false,
+    "workbench.activityBar.visible": true,
+    "workbench.statusBar.visible": false,
+    "window.title": "${dirty}",
+    "zenMode.hideLineNumbers": false,
+    "editor.lineNumbers": "relative",
+    "window.zoomLevel": 0,
+    "terminal.integrated.inheritEnv": false,
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.fontFamily": "Ubuntu Mono derivative Powerline",
+    "workbench.preferredLightColorTheme": "Solarized Light",
+    "workbench.editor.limit.value": 3,
+    "workbench.editor.limit.enabled": true,
+    "workbench.colorTheme": "Solarized Light"
+}
