@@ -1,0 +1,28 @@
+# Vim keyboard shortcuts
+
+Control + ^			open last file at last location
+:vsp {rel-path}			open file in vsplit
+:sp {rel-path}			open file in split
+Control + O			go back in time (_O_ld)
+Control + I			go forward in time
+ggVG				select contents of entire file
+*				forward search the word under the cursor
+# 				backward search the word under the cursor
+{no. of indents} [Vim-motion]	indent lines
+.				repeat last operation
+:r {rel-path}			insert contents of file rel-path at cursor
+
+--------------------------------------------------------------------------------
+########## Batch replace text ##########
+/{xxx} Return			(results for search for xxx)
+cgn 				(change next occurence)
+new_substitution Escape
+.				(repeat operation)
+(or) n				(go to next occurence)
+
+--------------------------------------------------------------------------------
+########## Block insert ##########
+Control + V			
+[Vim-motion]
+I				(Insert at beginning of line, "A" for eol)
+text_to_be_inserted Escape

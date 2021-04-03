@@ -1,0 +1,5 @@
+# VSCode shortcuts
+Command + P			search for files
+Command + Return		Open hovered file 'to the right'
+fn + F12			jump to definition
+Shift + fn + F12		open references
