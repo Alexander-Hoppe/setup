@@ -1,0 +1,3 @@
+# ~/.profile
+
+export PATH=$PATH:.
