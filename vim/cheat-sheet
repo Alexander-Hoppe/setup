@@ -11,18 +11,20 @@ ggVG				select contents of entire file
 {no. of indents} [Vim-motion]	indent lines
 .				repeat last operation
 :r {rel-path}			insert contents of file rel-path at cursor
+{line number} + gg  go to line {line number}
+ZZ                  equivalent to :wq
 
 --------------------------------------------------------------------------------
 ########## Batch replace text ##########
 /{xxx} Return			(results for search for xxx)
 cgn 				(change next occurence)
-new_substitution Escape
+{new_substitution} Escape
 .				(repeat operation)
 (or) n				(go to next occurence)
 
 --------------------------------------------------------------------------------
 ########## Block insert ##########
-Control + V			
+Control + V
 [Vim-motion]
 I				(Insert at beginning of line, "A" for eol)
-text_to_be_inserted Escape
+{text_to_be_inserted} Escape
