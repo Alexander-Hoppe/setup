@@ -6,7 +6,6 @@ set tabstop=4 softtabstop=4
 set shiftwidth=4
 set expandtab
 set smartindent
-set nohlsearch
 set hidden
 " set noswapfile
 set nobackup
@@ -30,6 +29,14 @@ nmap <leader>gd <Plug>(coc-definition)
 nmap <leader>gr <Plug>(coc-references)
 " nmap <leader>rn <Plug>(coc-rename)
 nnoremap <C-p> :GFiles<CR>
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction
 
 fun! TrimWhitespace()
     let l:save = winsaveview()
