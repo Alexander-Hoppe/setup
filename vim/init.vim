@@ -11,6 +11,7 @@ set smartindent
 set nobackup
 set incsearch
 
+
 set colorcolumn=80
 
 " Directory for plugins
@@ -26,6 +27,8 @@ Plug 'morhetz/gruvbox'
 
 " Initialize plugin system
 call plug#end()
+
+set iskeyword-=_
 
 let mapleader = " "
 
@@ -43,6 +46,13 @@ function! s:show_documentation()
     call CocAction('doHover')
   endif
 endfunction
+
+" Convenient command to see the difference between the current buffer and the
+" file it was loaded from, thus the changes you made.
+if !exists(":DiffOrig")
+  command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
+          \ | wincmd p | diffthis
+endif
 
 fun! TrimWhitespace()
     let l:save = winsaveview()
