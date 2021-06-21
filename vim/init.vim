@@ -9,6 +9,9 @@ set autoindent
 set smartindent
 " set hidden
 set nobackup
+set laststatus=2
+set statusline=[%n]\ %f%m%#todo#%=%c,%l/%L
+set hlsearch
 set incsearch
 
 
