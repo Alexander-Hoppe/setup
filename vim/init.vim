@@ -38,7 +38,10 @@ let mapleader = " "
 nmap <leader>gd <Plug>(coc-definition)
 nmap <leader>gr <Plug>(coc-references)
 " nmap <leader>rn <Plug>(coc-rename)
-"
+" Double-j to exit insert mode                                                  
+inoremap jj <Esc>                                                               
+" Remap save                                                                    
+inoremap <C-s> <Esc>:w <CR> 
 nnoremap <C-p> :GFiles<CR>
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 
